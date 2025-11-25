@@ -13,5 +13,5 @@ H_vs_TT_dataset = io.BytesIO(response.content)
 import h5py 
 
 with h5py.File(H_vs_TT_dataset, 'r') as f:
-    signal_tensor = torch.tensor(f['signal'][:], dtype=torch.float32)
-    background_tensor = torch.tensor(f['background'][:], dtype=torch.float32)
+    signal_tensor = torch.tensor(f['Signal'][:], dtype=torch.float32)
+    background_tensor = torch.tensor(f['Background'][:], dtype=torch.float32)
