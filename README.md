@@ -21,3 +21,8 @@ The former will be classes as signal; the latter background.
 **It is recommended that you run this tutorial using Google Colab.** Colab is the preferred option for machine learning development: it comes with PyTorch pre-installed (usually), and has access to GPUs - though we won't need GPUs for the main task today.
 
 The notebook will also run on Binder and SWAN. For Binder, you will need to pip install the necessary modules, which for PyTorch can take a little while.
+
+## Other Resources
+If you find this tutorial is moving too quickly, I have a more pedagogical set of slides and exercises [here](https://github.com/els285/Intro2NN4Physics). This takes you through basic operations with PyTorch tensors, introduces machine learning through linear models as a pre-cursor to deep learning, and finishes with the task we have tackled here!
+
+If you already know about machine learning and can build a DNN, try some jet tagging tasks [here](https://github.com/els285/RAEngHEPTutorial). You can even build a transformer to classify jets 
