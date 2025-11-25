@@ -1,7 +1,7 @@
 # ML-ATLASOpenData
 Repository for **machine learning** resources for ATLAS OpenData November 2025 tutorial.
 
-![image](~/AOpenData_ML_IMAGE.png)
+![image](https://github.com/els285/ML-ATLASOpenData/blob/main/AOpenData_ML_IMAGE.png)
 
 ## Scope
 This 90 minute session cannot cover an introduction to machine learning and PyTorch, guide you through parsing ATLAS OpenData for using in machine learning contexts, teach you how to build, train and evaluate the performance of a deep neural network, and apply this to train a classifier to separate two processes measured in ATLAS proton-proton collisions. But it's going to attempt that anyway...
