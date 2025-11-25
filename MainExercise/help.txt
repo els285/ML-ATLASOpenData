@@ -1,0 +1,17 @@
+url = "https://cernbox.cern.ch/remote.php/dav/public-files/icjK5HWChdTcdb2/WW_vs_TT_dataset.h5"
+
+import requests
+import io
+
+# download
+response = requests.get(url)
+response.raise_for_status() # Check for download errors
+
+# load into a in-memory binary stream
+H_vs_TT_dataset = io.BytesIO(response.content)
+
+import h5py 
+
+h5py.File(H_vs_TT_dataset, 'r') as f:
+    signal_tensor = torch.tensor(f['signal'][:], dtype=torch.float32)
+    background_tensor = torch.tensor(f['background'][:], dtype=torch.float32)
